@@ -1,0 +1,62 @@
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/work\/oya\/sass\/gouwuche\.scss}line{font-family:\000031}}
+body {
+  font-size: 50px;
+  padding: 0;
+  margin: 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/work\/oya\/sass\/gouwuche\.scss}line{font-family:\000032}}
+header {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0rem 0.1rem 0rem 0.1rem;
+  height: 0.48rem;
+  position: fixed;
+  background: #8E488E;
+  display: flex; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/work\/oya\/sass\/gouwuche\.scss}line{font-family:\0000310}}
+  header div {
+    font-size: 16px;
+    color: #fff;
+    line-height: 0.48rem;
+    text-align: center;
+    flex: 8; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/work\/oya\/sass\/gouwuche\.scss}line{font-family:\0000317}}
+  header a {
+    height: 100%;
+    width: 0.18rem;
+    flex: 1;
+    color: #FFFFFF;
+    line-height: 0.48rem;
+    text-align: right; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/work\/oya\/sass\/gouwuche\.scss}line{font-family:\0000325}}
+  header a:nth-child(1) {
+    font-size: 0.18rem;
+    text-align: left; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/work\/oya\/sass\/gouwuche\.scss}line{font-family:\0000332}}
+footer {
+  height: 0.46rem;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  font-size: 14px;
+  display: flex;
+  text-align: center;
+  line-height: 0.46rem; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/work\/oya\/sass\/gouwuche\.scss}line{font-family:\0000341}}
+  footer label {
+    flex: 2;
+    height: 0.46rem; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/work\/oya\/sass\/gouwuche\.scss}line{font-family:\0000345}}
+  footer a:nth-child(2) {
+    flex: 3;
+    color: #FFFFFF;
+    background: #dd3d97; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/work\/oya\/sass\/gouwuche\.scss}line{font-family:\0000349}}
+    footer a:nth-child(2) i {
+      margin-left: 6px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/work\/oya\/sass\/gouwuche\.scss}line{font-family:\0000353}}
+  footer a:nth-child(3) {
+    flex: 4;
+    color: #FFFFFF;
+    background-color: #8E488E; }
