@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="js/zepto.min.js"></script>
+		<script src="js/touch.js"></script>
+		<script type="text/javascript">
+			document.addEventListener("DOMContentLoaded",function(){
+				var btn=$("button");
+				var goodsList=localStorage.getItem("goodsList");
+				goodsList=goodsList?JSON.parse(goodsList):[];
+				console.log(goodsList);
+				btn.on("tap",function(){
+					var obj={};
+					obj.pic="../img/57.jpg";
+					obj.name="斯文印花黑灰色短袖连衣裙";
+					obj.price="120";
+					obj.num="1";
+					goodsList.unshift(obj);
+					
+					localStorage.setItem("goodsList",JSON.stringify(goodsList));
+				})
+			})
+		</script>
+	</head>
+	<body>
+		<button>保存</button>
+	</body>
+</html>
