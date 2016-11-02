@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1" />
+		<title>详情页</title>
+		<link rel="stylesheet" type="text/css" href="../css/detail.mins.css"/>
+		<link rel="stylesheet" type="text/css" href="../node_modules/swiper/dist/css/swiper.min.css"/>
+		<link rel="stylesheet" type="text/css" href="../font/ux_1478008698_420203/iconfont.css"/>
+		<link rel="stylesheet" type="text/css" href="../font/shopping_car/iconfont.css"/> 
+	</head>
+	<body>
+		<header>
+			 <span><a class="iconfont icon-back" id="icon1"></a></span>
+			 <span id="btn_det">详情</span>
+			 <span id="btn_com">评论</span>
+			 <span><a class="iconfont icon-list" id="icon2"></a></span>
+		</header>
+		
+	     <!--轮播图-->	
+	<!--<div class="swiper-container">
+			    <div class="swiper-wrapper">
+			          <div class="swiper-slide"><img src="../img/55.jpg"/></div>
+			        <div class="swiper-slide"><img src="../img/56.jpg"/></div>
+			        <div class="swiper-slide"><img src="../img/57.jpg"/></div>
+			         <div class="swiper-slide"><img src="../img/58.jpg"/></div>
+			          <div class="swiper-slide"><img src="../img/59.jpg"/></div>
+			    </div>
+			    <!-- 如果需要分页器 -->
+			    <!--<div class="swiper-pagination"></div>-->
+			    
+			    <!-- 如果需要导航按钮 -->
+			    <!--<div class="swiper-button-prev"></div>
+			    <div class="swiper-button-next"></div>-->
+			    
+			    <!-- 如果需要滚动条 -->
+			    <!--<div class="swiper-scrollbar"></div>
+			</div>-->
+			<!--导航等组件可以放在container之外-->
+			     
+			<!---->
+			
+		
+			     
+			<!---->
+	     	<!--<section>
+	     		  <h3>斯文印花黑灰色短袖连衣裙</h3> 
+	     		  <p class="price">￥120</p>
+	     		  <p><span>品牌名称</span><a>：LETDIOSTO</a></p>
+	     		  <p><span>商品名称</span><a>：女款黑白色条纹上衣阔腿裤套装</a></p>
+	     		  <p><span>产地</span><a>：中国</a></p>
+	     		  <p><span>材质</span><a>：上衣：粘纤77聚酯纤维18.5%氨纶4.5%裤子聚酯纤维100%（装饰物除外）</a></p>
+	     		  <p><span>洗涤说明</span><a>：最高洗涤温度40℃不可漂白&nbsp;平摊晾干&nbsp;熨斗地板最高温度110℃常规干洗（深色或者深色与浅色相拼的衣服洗涤时请注意）</a></p>  
+	     		  <p><img src="../img/detail_intr1.jpg"/></p>
+	     		   <p><img src="../img/detail_intr2.jpg"/></p>
+	     		    <p><img src="../img/detail_intr3.jpg"/></p>
+	     		     <p><img src="../img/detail_intr4.jpg"/></p>
+	     	</section>-->
+	     	
+	     	
+	     	<!--<section class="section_com">
+	     		      <p><span><img src="../img/user.jpg"/></span>
+	     		      	 <span>匿名</span>
+	     		      	 <span>2015-05-16&nbsp;12:00</span>
+	     		      </p>
+	     		      <p><img src="../img/score.jpg"/></p>
+	     		      <p>真心好，下次还会再来买</p>
+	     		      <p>购买日期：2016-05-10&nbsp;14:00</p>
+	     		      <p></p>
+	     	</section>-->
+	     	
+	     <footer>
+		     	  <span><a class="iconfont icon-shopping_car" id="icon_car"></a></span>
+		     	  <span>加入购物车</span>
+		     	  <span>立即购买</span>
+	     </footer>
+	     		     	
+	    <script src="../js/jquery-1.12.0.js"></script>	    
+	    <script src="../node_modules/swiper/dist/js/swiper.min.js"></script> 
+	    
+	      <script>
+	              
+	     
+		 	     /*json获取数据与加载*/
+		 	      jQuery(document).ready(function(){
+		 	      	
+		 	      	  /*详情页设置*/
+		 	     	    var $section=$('<section/>');  //创建section
+		 	     	    $section.addClass('section_det'); 
+		 	     	    
+//		 	     	    console.log("css");
+                        $section.appendTo('body');
+                        
+                         /*捕获按钮，页面加载到后*/
+                         var $btn_det=$('#btn_det');
+                         var $btn_com=$('#btn_com');
+        
+                      $.ajax({
+                      	type:"get",
+                      	url:"../data/detail_det.json",  
+                      	async:true,
+                      	success:function(res){  //从浏览器上获取数据
+                      		
+                      		 $.each(res,function(idx,item){  //从服务器获取
+//                    		 	   console.log(res); 
+                        		 	   
+                       		 	   
+                      		 	   /*div盒子*/
+                      		 	   var $div=$('<div/>').addClass('swiper-container');
+                      		 	   $div.appendTo($section);
+                      		 	   var $div2=$('<div/>').addClass('swiper-wrapper');
+                      		 	   $div2.appendTo($div);
+                      		 	   
+                      		 	   var $div3=$('<div/>').addClass('swiper-slide');
+                      		 	   $div3.appendTo($div2);              		 	   
+                      		 	   $('<img/>').attr({src:item.src_pic1}).appendTo($div3);
+                      		 	   
+                      		 	   var $div4=$('<div/>').addClass('swiper-slide');
+                      		 	   $div4.appendTo($div2);
+                      		 	   $('<img/>').attr({src:item.src_pic2}).appendTo($div4);
+                      		 	   
+                      		 	   var $div5=$('<div/>').addClass('swiper-slide');
+                      		 	   $div5.appendTo($div2);
+                      		 	   $('<img/>').attr({src:item.src_pic3}).appendTo($div5);
+                      		 	   
+                      		 	   var $div6=$('<div/>').addClass('swiper-slide');
+                      		 	   $div6.appendTo($div2);
+                      		 	   $('<img/>').attr({src:item.src_pic4}).appendTo($div6);
+                      		 	   
+                      		 	   /*分页*/
+                      		 	   var $div7=$('<div/>').addClass('swiper-pagination');
+                      		 	   $div7.appendTo($div);
+                      		 	   /*导航按钮*/
+//                    		 	   var $div8=$('<div/>').addClass('swiper-button-prev');
+//                    		 	   $div8.appendTo($div);
+//                    		 	   var $div9=$('<div/>').addClass('swiper-button-next');
+//                    		 	   $div9.appendTo($div);
+                      		 	   /*滚动条*/
+                      		 	   var $div10=$('<div/>').addClass('swiper-scrollbar');
+                      		 	   $div10.appendTo($div);
+                      		 	   
+                      		 	   
+                      		 	   
+                      		 	   /*商品详情ajxs请求*/
+                      		 	    $('<h3/>').html(item.title).appendTo($section);
+                                    /*价格*/
+                                    $('<p/>').addClass('price').html(item.price).appendTo($section);
+                    		 	    /*品牌名称*/
+                      		 	    var $p=$('<p/>').appendTo($section);
+                      		 	    $('<span/>').html(item.brand).appendTo($p);
+                      		 	    $('<a/>').html(item.brand_con).appendTo($p);
+                      		 	    /*商品名称*/
+                      		 	    var $p=$('<p/>').appendTo($section);
+                      		 	    $('<span/>').html(item.name).appendTo($p);
+                      		 	    $('<a/>').html(item.name_con).appendTo($p);
+                      		 	    /*产地*/
+                      		 	    var $p=$('<p/>').appendTo($section);
+                      		 	    $('<span/>').html(item.place).appendTo($p);
+                      		 	    $('<a/>').html(item.place_con).appendTo($p);
+                      		 	    /*材质*/
+                      		 	    var $p=$('<p/>').appendTo($section);
+                      		 	    $('<span/>').html(item.material).appendTo($p);
+                      		 	    $('<a/>').html(item.material_con).appendTo($p);
+                      		 	    /*洗涤说明*/
+                      		 	   var $p=$('<p/>').addClass('last').appendTo($section);
+                      		 	   $('<span/>').html(item.introduce).appendTo($p);
+                      		 	  $('<a/>').html(item.introduce_con).appendTo($p);
+                      		 	  
+                      		 	    /*详情图片*/
+                      		 	  var $div=$('<div/>').appendTo($section);
+                      		 	  $('<img/>').attr({src:item.src_det1}).appendTo($div);
+                      		 	  
+                      		 	  var $div=$('<div/>').appendTo($section);
+                      		 	  $('<img/>').attr({src:item.src_det2}).appendTo($div);
+                      		 	  
+                      		 	  var $div=$('<div/>').appendTo($section);
+                       		 	  $('<img/>').attr({src:item.src_det3}).appendTo($div);
+                      		 	  
+                      		 	  var $div=$('<div/>').appendTo($section);
+                      		 	  $('<img/>').attr({src:item.src_det4}).appendTo($div);
+                      		 	  
+                      		 })
+                      		 
+                      		 /*此时，事件已加载完成，（success）现在写入轮播图js*/
+                      		 var mySwiper = new Swiper ('.swiper-container', {
+							    direction: 'horizontal',
+							    loop: true,
+							    //自动轮播
+						        autoplay: 1000,
+							    
+							    //速度(图片移动的速度)
+				//			    speed: 100,
+							    
+							    watchSlidesProgress : true,
+							    
+							    grabCursor : true,
+							    
+							     //设定为true时，活动块会居中，而不是默认状态下的居左。
+							    slidesPerView : 1,
+				                centeredSlides : true,
+							    // 如果需要分页器
+							    pagination: '.swiper-pagination',
+							    watchSlidesVisibility: true,
+							    			  
+							    // 如果需要前进后退按钮
+							    nextButton: '.swiper-button-next',
+							    prevButton: '.swiper-button-prev',
+							    
+							    // 如果需要滚动条
+				//			    scrollbar: '.swiper-scrollbar',
+							  })        
+                      		
+                       		   //页面加载完，绑定点击事件
+                       		   
+                       		    $btn_det.on('click',function(){
+//                    		   	       console.log("aaa");
+                      		   	       $section.css({display:"block"});
+//                    		   	       $section_com.css({display:"none"});
+                      		   	       $btn_det.css({background:"white",color:"black"});
+//                    		   	       $btn_com.css({background:"#8e488e",color:"white"});
+                      		   })
+                       		     $btn_com.on('click',function(){
+//                    		   	     console.log("bbb");
+                      		   	      $section.css({display:"none"});
+//                    		   	      $section_com.css({display:"block"});
+//                    		   	      $btn_com.css({background:"white",color:"black"});
+//                    		   	      console.log("aaa");
+                                      $btn_det.css({background:"#8e488e",color:"white"})
+                      		   })    
+                       		    
+                       		   
+                      	}
+                      	                     	
+                    });
+                    
+                     /*评论页ajax请求*/
+                    $.ajax({
+					url:"../data/detail_com.json",
+					success : function(e){
+//						console.log(e);
+                      $.each(e,function(idx,item) {
+                      	    
+                      	     /*评论页设置*/   /*每请求json就创建一个section,注意section的类名*/ 
+			                        var $section_com=$('<section/>');   //在评论页创建一个section
+			                        $section_com.addClass('section_com'); 
+			                        $section_com.appendTo('body');
+//                                  console.log($section_com);
+                      		 	   
+                        		  /*商品详情页*/
+                       		 	   var $p1=$('<p/>').appendTo($section_com);
+                       		 	  /*创建三个span标签*/
+                       		 	   var $span1=$('<span/>').appendTo($p1)
+                       		 	   $('<img/>').attr({src:item.src_user}).appendTo($span1);
+                       		 	   
+                       		 	   $('<span/>').html(item.user_name).appendTo($p1);
+                       		 	   
+                       		 	   $('<span/>').html(item.comment_time).appendTo($p1);
+                       		 	   
+                       		 	   var $p2=$('<p/>').appendTo($section_com);
+                       		 	   $('<img/>').attr({src:item.src_score}).appendTo($p2);
+                       		 	   
+                       		 	   $('<p/>').html(item.user_com).appendTo($section_com);
+                       		 	   $('<p/>').html(item.buy_time).appendTo($section_com);
+                       		 	   $('<p/>').appendTo($section_com);
+                       		 	   
+                       		 	   
+                       		 	    /*点击事件*/
+                           $btn_det.on('click',function(){
+//                    		   	       console.log("ccc");
+//                    		   	       $section.css({display:"block"});
+                      		   	       $section_com.css({display:"none"});
+//                    		   	       $btn_det.css({background:"white",color:"black"});
+                      		   	       $btn_com.css({background:"#8e488e",color:"white"});
+                      		   })
+                       		     $btn_com.on('click',function(){
+//                    		   	     console.log("ddd");
+//                    		   	     console.log($section_com);
+//                    		   	      $section.css({display:"none"});
+                      		   	      $section_com.css({display:"block"});
+                      		   	      $btn_com.css({background:"white",color:"black"});
+//                    		   	      console.log("aaa");
+//                                    $btn_det.css({background:"#8e488e",color:"white"})；
+                      		   })    
+                       		 	   
+                      });
+                      
+                     
+                                  
+					}
+				});
+
+                /*在加载完成后实现点击事件*/
+                      		  
+                      		   var $section_com=$('.section_com');
+//                    		   console.log($section_com);
+                      		  
+                      		       
+                    
+                    
+                              
+             }) 
+		 	</script>
+		 	
+		 	
+
+	</body>
+</html>
