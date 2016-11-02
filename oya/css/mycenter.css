@@ -1,0 +1,310 @@
+body {
+	background: rgb(241, 245, 246);
+	position: relative;
+}
+
+
+/*头部*/
+
+.center-header {
+	display: flex;
+	background: rgb(142, 72, 142);
+	padding: 10px 0;
+}
+
+.center-header a {
+	flex: 1;
+	color: white;
+	
+}
+.center-header a:nth-child(1){
+	text-align: left;
+	
+}
+.center-header a:nth-child(2){
+	text-align: center;
+	
+}
+.center-header a:nth-child(3){
+	text-align: right;
+	margin-right: 10px;
+}
+
+
+
+
+
+
+/*点击菜单文字图标会出现菜单列表*/
+
+.center-menu {
+	width: 80px;
+	background: gray;
+	position: absolute;
+	opacity: 0.8;
+	top: 40px;
+	right: 5vw;
+	border-radius: 5px;
+	display: none; 
+}
+
+.center-menu:before {
+	content: "";
+	
+	/*background: green;*/
+	border: 10px solid transparent/*red*/
+	;
+	border-bottom: 10px solid gray;
+	position: absolute;
+	/*border-top: none;*/
+	/*border-left: none;*/
+	/*border-right: none;*/
+	right: 5px;
+	top: -20px;
+}
+
+.center-menu ul li {
+	height: 30px;
+	border-bottom: 1px solid darkgray;
+	text-align: center;
+	line-height: 30px;
+}
+
+.center-menu ul li p {
+	font-size: 12px;
+	color: white;
+}
+
+
+/*头像 帐号 个人会员等级*/
+
+.center-content-1 {
+	background: brown;
+	display: flex;
+	padding: 5px;
+	color: white;
+	background-image: linear-gradient(to right, black 30%, brown);
+}
+/*.center-content-1 div{flex: 1;}*/
+.center-content-1 .photo img{
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+}
+
+.center-content-1 .phonenumber{
+	padding: 5px;
+}
+
+.center-content-1 .phonenumber span {
+	font-size: 14px;
+	display: flex;
+}
+
+.center-content-1 .phonenumber span img {
+	width: 15px;
+	height: 15px;
+}
+
+.center-content-1 .leavefor {
+	flex: 2;
+	/*color: red;*/
+	text-align: right;
+	height: 18px;
+	margin-top: 15px;
+}
+
+.center-content-1-third span {
+	width: 20px;
+	height: 14px;
+	margin-left: 90%;
+}
+
+
+/*金额信息*/
+
+.center-content-2 {
+	display: flex;
+	background: white;
+	padding: 10px;
+	/*box-shadow: 0px 10px 10px gainsboro;*/
+}
+
+.center-content-2 div {
+	flex: 1;
+	text-align: center;
+	border-right: 1px solid gainsboro;
+	height: 40px;
+}
+
+.center-content-2 div p {
+	color: darkgray;
+	font-size: 14px;
+}
+
+.center-content-2 .token {
+	border-right: none;
+}
+
+
+/* 会员等级信息*/
+
+.center-content-3 {
+	background: white;
+	margin-top: 15px;
+}
+
+.center-content-3 p {
+	font-size: 12px;
+	flex: 1
+}
+
+.center-content-3 ul li {
+	display: flex;
+	height: 40px;
+	border-bottom: 1px solid gainsboro;
+	line-height: 40px;
+	padding: 3px;
+}
+
+.center-content-3 .icon-vipdengji1 {
+	border-radius: 50%;
+	background: rgb(252, 33, 94);
+	width: 30px;
+	height: 30px;
+	display: inline-block;
+	color: white;
+	text-align: center;
+	line-height: 30px;
+	margin-top: 4px;
+}
+
+.center-content-3 .icon-vipdengji2 {
+	border-radius: 50%;
+	background: rgb(79, 198, 238);
+	width: 30px;
+	height: 30px;
+	display: inline-block;
+	color: white;
+	text-align: center;
+	line-height: 30px;
+	margin-top: 4px;
+}
+
+.center-content-3 .icon-vipdengji3 {
+	border-radius: 50%;
+	background: rgb(255, 166, 76);
+	width: 30px;
+	height: 30px;
+	display: inline-block;
+	color: white;
+	text-align: center;
+	line-height: 30px;
+	margin-top: 4px;
+}
+
+.center-content-3 .icon-qianwang {
+	margin-left: 60%;
+}
+
+.center-content-3 p {
+	margin-left: 15px;
+}
+
+
+/**********************订单 、完善资料等************************/
+
+.center-content-4 {
+	margin-top: 20px;
+	background: white;
+}
+
+.center-content-4 p {
+	font-size: 12px;
+	flex: 1;
+	margin-left: 15px;
+}
+
+.center-content-4 ul a li {
+	display: flex;
+	height: 40px;
+	line-height: 40px;
+	border-bottom: 1px solid gainsboro;
+}
+
+.center-content-4 .icon-order {
+	border-radius: 50%;
+	background: rgb(252, 33, 94);
+	width: 30px;
+	height: 30px;
+	color: white;
+	text-align: center;
+	line-height: 30px;
+	margin-top: 4px;
+}
+
+.center-content-4 .icon-shengji {
+	border-radius: 50%;
+	background: rgb(79, 198, 238);
+	width: 30px;
+	height: 30px;
+	color: white;
+	text-align: center;
+	line-height: 30px;
+	margin-top: 4px;
+}
+
+.center-content-4 .icon-wanshangerenziliao {
+	border-radius: 50%;
+	background: rgb(255, 166, 76);
+	width: 30px;
+	height: 30px;
+	color: white;
+	text-align: center;
+	line-height: 30px;
+	margin-top: 4px;
+	line-height: 40px;
+}
+
+
+/*.content-4 .icon-qianwang {
+	margin-left: 50%;
+}
+
+#qianwang {
+	margin-left: 80%;
+}*/
+
+
+/***************尾部*********************/
+
+.center-footer {
+		background: white;
+		position: fixed;
+		bottom: 0;
+		width: 100%;
+		border-top: 1px solid gainsboro;
+	}
+	
+	.center-footer ul {
+		display: flex;
+	}
+	.center-footer ul a{flex: 1;}
+	
+	.center-footer ul a li {
+		;
+		color: gray;
+		flex: 1;
+		text-align: center;
+	}
+	
+	.center-footer ul a li p {
+		font-size: 12px;
+		
+	}
+	
+	
+	.active {
+	
+		background: rgb(201, 235, 246);
+	}
