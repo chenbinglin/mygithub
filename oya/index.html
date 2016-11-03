@@ -4,101 +4,16 @@
 	<meta charset="UTF-8" />
 	<meta  name="viewport" content="width=device-width,user-scalable=no"/>
 	<title>home</title>
-	
 	<link rel="stylesheet" type="text/css" href="font/iconfont.css">
 	<!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="swiper/dist/css/swiper.min.css">
+    <!--index CSS-->
+    <link rel="stylesheet" type="text/css" href="css/index.css"/>
     <!-- Swiper JS -->
 	<script src="swiper/dist/js/swiper.js"></script>
 	<script src="js/jquery.js"></script>
 	<script src="js/jquery.lazyload.js"></script>
-	<script src="js/lazy.js">
-		
-	</script>
-	
-	<style type="text/css">
-		*{list-style: none;margin: 0;padding: 0;}
-		body{font-family: "微软雅黑";}
-		img{width: 100%;display: block;}
-		.wrap ul li img:hover{opacity:0.8;filter:alpha(opacity=80);}
-		header{
-			top: 0;
-			left: 0;
-			right: 0;
-			padding: 15px;
-			background: rgb(142,72,142);
-			position:fixed;
-			z-index: 2;
-		}
-		header a{
-			text-decoration: none;
-			color: white;
-			font-size: 18px;
-			display: flex;
-			flex: 1;
-			justify-content: center;
-			align-items: center;
-		}
-		header a span{display: flex;flex: 1;justify-content: flex-end;align-content: flex-end;margin-top: -25px;}
-		.swiper-container {
-        width: 100%;
-        height: 100%;
-        margin-top: 45px;
-        z-index: 1;
-  		}
-	    .swiper-wrapper img{width: 100%;}
-	    .swiper-slide {
-        text-align: center;
-        font-size: 18px;
-        background: #fff;
-        /* Center slide text vertically */
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: -webkit-flex;
-        display: flex;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        -webkit-justify-content: center;
-        justify-content: center;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        -webkit-align-items: center;
-        align-items: center;
-    	}	
-    	#jinxuan img{width: 100%;}
-		.wrap ul{width: 100%;display: flex;}
-		.wrap ul li{flex: 1;}
-		.wrap ul li:nth-child(1){margin-right: 5px;}
-		.wrap ul li img{width: 100%; display: flex;justify-content: center;align-content: center;margin-top: 5px;}	
-		
-		.toTop{ position:fixed; bottom:70px; right:5px;cursor:pointer;}
-		
-		#foot span{font-weight: 600;padding:15px;color: rgb(114,124,141);}
-		#foot p{font-weight: 600;padding:12px 0 5px 15px;color: rgb(236,46,161);}
-		footer {
-			left: 0;
-			bottom: 0;
-			right: 0;
-			position: fixed;
-			padding: 7px;
-			background: #998;
-			border-top:solid 1px #666;	
-		}
-		footer nav {
-			display: flex;
-			justify-content: center;
-			align-items: center;
-		}
-		footer nav a {
-			color: white;
-			flex: 1;
-			text-align: center;
-			text-decoration: none;
-		}
-		footer nav a:nth-child(1){color: rgb(142,72,142);}
-		footer nav a:hover{color: rgb(142,72,142);}
-		
-		</style>
+	<script src="js/lazy.js"></script>
 	</head>
 	<body>
 		<header>
@@ -108,10 +23,9 @@
 		<!-- Swiper -->
     <div class="swiper-container">
         <div class="swiper-wrapper">
-            <div class="swiper-slide"><img src="image/4.jpg"/></div>
-            <div class="swiper-slide"><img src="image/1.jpg"/></div>
-            <div class="swiper-slide"><img src="image/2.jpg"/></div>
-
+            <div class="swiper-slide"><img src="img/4.jpg"/></div>
+            <div class="swiper-slide"><img src="img/1.jpg"/></div>
+            <div class="swiper-slide"><img src="img/2.jpg"/></div>
         </div>
         <!-- Add Pagination -->
         <div class="swiper-pagination"></div>
@@ -130,120 +44,113 @@
 	        loop: true
 	    });
 	    </script>
-	   
-	   
-		<div id="jinxuan"><img src="image/41.jpg"/></div>
-		<div id="nvzhuang"><img src="image/31.jpg"/></div>
-		
+		<div id="jinxuan"><img src="img/41.jpg"/></div>
+		<div id="nvzhuang"><img src="img/31.jpg"/></div>
 		<div class="wrap">
 			<ul>
-				<li><img src="image/27.jpg"/></li>
-				<li><img src="image/28.jpg"/></li>
+				<li><img src="img/27.jpg"/></li>
+				<li><img src="img/28.jpg"/></li>
 			</ul>
 			<ul>
-				<li><img src="image/29.jpg"/></li>
-				<li><img src="image/30.jpg"/></li>
+				<li><img src="img/29.jpg"/></li>
+				<li><img src="img/30.jpg"/></li>
 			</ul>
 			<ul>
-				<li><img src="image/36.jpg"/></li>
-				<li><img src="image/32.jpg"/></li>
+				<li><img src="img/36.jpg"/></li>
+				<li><img src="img/32.jpg"/></li>
 			</ul>
 			<ul>
-				<li><img src="image/33.jpg"/></li>
-				<li><img src="image/34.jpg"/></li>
+				<li><img src="img/33.jpg"/></li>
+				<li><img src="img/34.jpg"/></li>
 			</ul>
 			<ul>
-				<li><img src="image/35.jpg"/></li>
-				<li><img src="image/36.jpg"/></li>
+				<li><img src="img/35.jpg"/></li>
+				<li><img src="img/36.jpg"/></li>
 			</ul>
 			<ul>
-				<li><img src="image/28.jpg"/></li>
-				<li><img src="image/27.jpg"/></li>
-			</ul>
-			
-			<ul>
-				<li><img src="image/27.jpg"/></li>
-				<li><img src="image/28.jpg"/></li>
-			</ul>
-			<ul>
-				<li><img src="image/29.jpg"/></li>
-				<li><img src="image/30.jpg"/></li>
-			</ul>
-			<ul>
-				<li><img src="image/36.jpg"/></li>
-				<li><img src="image/32.jpg"/></li>
-			</ul>
-			<ul>
-				<li><img src="image/33.jpg"/></li>
-				<li><img src="image/34.jpg"/></li>
-			</ul>
-			<ul>
-				<li><img src="image/35.jpg"/></li>
-				<li><img src="image/36.jpg"/></li>
-			</ul>
-			<ul>
-				<li><img src="image/28.jpg"/></li>
-				<li><img src="image/27.jpg"/></li>
+				<li><img src="img/28.jpg"/></li>
+				<li><img src="img/27.jpg"/></li>
 			</ul>
 			
 			<ul>
-				<li><img src="image/36.jpg"/></li>
-				<li><img src="image/32.jpg"/></li>
+				<li><img src="img/27.jpg"/></li>
+				<li><img src="img/28.jpg"/></li>
 			</ul>
 			<ul>
-				<li><img src="image/33.jpg"/></li>
-				<li><img src="image/34.jpg"/></li>
+				<li><img src="img/29.jpg"/></li>
+				<li><img src="img/30.jpg"/></li>
 			</ul>
 			<ul>
-				<li><img src="image/35.jpg"/></li>
-				<li><img src="image/36.jpg"/></li>
+				<li><img src="img/36.jpg"/></li>
+				<li><img src="img/32.jpg"/></li>
 			</ul>
 			<ul>
-				<li><img src="image/28.jpg"/></li>
-				<li><img src="image/27.jpg"/></li>
+				<li><img src="img/33.jpg"/></li>
+				<li><img src="img/34.jpg"/></li>
+			</ul>
+			<ul>
+				<li><img src="img/35.jpg"/></li>
+				<li><img src="img/36.jpg"/></li>
+			</ul>
+			<ul>
+				<li><img src="img/28.jpg"/></li>
+				<li><img src="img/27.jpg"/></li>
+			</ul>
+			
+			<ul>
+				<li><img src="img/36.jpg"/></li>
+				<li><img src="img/32.jpg"/></li>
+			</ul>
+			<ul>
+				<li><img src="img/33.jpg"/></li>
+				<li><img src="img/34.jpg"/></li>
+			</ul>
+			<ul>
+				<li><img src="img/35.jpg"/></li>
+				<li><img src="img/36.jpg"/></li>
+			</ul>
+			<ul>
+				<li><img src="img/28.jpg"/></li>
+				<li><img src="img/27.jpg"/></li>
 			</ul>
 		</div>
 		
-		<div id=""><img src="image/50.jpg"/></div>
-		<div id=""><img src="image/51.jpg"/></div>
-		<div id=""><img src="image/52.jpg"/></div>
-		<div id=""><img src="image/53.jpg"/></div>
+		<div id=""><img src="img/50.jpg"/></div>
+		<div id=""><img src="img/51.jpg"/></div>
+		<div id=""><img src="img/52.jpg"/></div>
+		<div id=""><img src="img/53.jpg"/></div>
 		
-		<div id=""><img src="image/50.jpg"/></div>
-		<div id=""><img src="image/51.jpg"/></div>
-		<div id=""><img src="image/52.jpg"/></div>
-		<div id=""><img src="image/53.jpg"/></div>
+		<div id=""><img src="img/50.jpg"/></div>
+		<div id=""><img src="img/51.jpg"/></div>
+		<div id=""><img src="img/52.jpg"/></div>
+		<div id=""><img src="img/53.jpg"/></div>
 		
-		<div id=""><img src="image/50.jpg"/></div>
-		<div id=""><img src="image/51.jpg"/></div>
-		<div id=""><img src="image/52.jpg"/></div>
-		<div id=""><img src="image/53.jpg"/></div>
+		<div id=""><img src="img/50.jpg"/></div>
+		<div id=""><img src="img/51.jpg"/></div>
+		<div id=""><img src="img/52.jpg"/></div>
+		<div id=""><img src="img/53.jpg"/></div>
 		
-		<div id="foot"><img src="image/2.jpg"/><span>津率享红华凝香平衡液&nbsp;150ml</span><p>&yen;120</p></div>
-		<div id="foot"><img src="image/1.jpg"/><span>津率享红华凝香平衡液&nbsp;150ml</span><p>&yen;120</p></div>
-		<div id="foot"><img src="image/3.jpg"/><span>津率享红华凝香平衡液&nbsp;150ml</span><p>&yen;120</p></div>
-		<div id="foot"><img src="image/4.jpg"/><span>津率享红华凝香平衡液&nbsp;150ml</span><p>&yen;120</p></div>
+		<div id="foot"><img src="img/2.jpg"/><span>津率享红华凝香平衡液&nbsp;150ml</span><p>&yen;120</p></div>
+		<div id="foot"><img src="img/1.jpg"/><span>津率享红华凝香平衡液&nbsp;150ml</span><p>&yen;120</p></div>
+		<div id="foot"><img src="img/3.jpg"/><span>津率享红华凝香平衡液&nbsp;150ml</span><p>&yen;120</p></div>
+		<div id="foot"><img src="img/4.jpg"/><span>津率享红华凝香平衡液&nbsp;150ml</span><p>&yen;120</p></div>
 		
-		<div id="foot"><img src="image/2.jpg"/><span>津率享红华凝香平衡液&nbsp;150ml</span><p>&yen;120</p></div>
-		<div id="foot"><img src="image/1.jpg"/><span>津率享红华凝香平衡液&nbsp;150ml</span><p>&yen;120</p></div>
-		<div id="foot"><img src="image/3.jpg"/><span>津率享红华凝香平衡液&nbsp;150ml</span><p>&yen;120</p></div>
-		<div id="foot"><img src="image/4.jpg"/><span>津率享红华凝香平衡液&nbsp;150ml</span><p>&yen;120</p></div>
+		<div id="foot"><img src="img/2.jpg"/><span>津率享红华凝香平衡液&nbsp;150ml</span><p>&yen;120</p></div>
+		<div id="foot"><img src="img/1.jpg"/><span>津率享红华凝香平衡液&nbsp;150ml</span><p>&yen;120</p></div>
+		<div id="foot"><img src="img/3.jpg"/><span>津率享红华凝香平衡液&nbsp;150ml</span><p>&yen;120</p></div>
+		<div id="foot"><img src="img/4.jpg"/><span>津率享红华凝香平衡液&nbsp;150ml</span><p>&yen;120</p></div>
 		
-		<div id="foot"><img src="image/2.jpg"/><span>津率享红华凝香平衡液&nbsp;150ml</span><p>&yen;120</p></div>
-		<div id="foot"><img src="image/1.jpg"/><span>津率享红华凝香平衡液&nbsp;150ml</span><p>&yen;120</p></div>
-		<div id="foot"><img src="image/3.jpg"/><span>津率享红华凝香平衡液&nbsp;150ml</span><p>&yen;120</p></div>
-		<div id="foot"><img src="image/4.jpg"/><span>津率享红华凝香平衡液&nbsp;150ml</span><p>&yen;120</p></div>
-		
+		<div id="foot"><img src="img/2.jpg"/><span>津率享红华凝香平衡液&nbsp;150ml</span><p>&yen;120</p></div>
+		<div id="foot"><img src="img/1.jpg"/><span>津率享红华凝香平衡液&nbsp;150ml</span><p>&yen;120</p></div>
+		<div id="foot"><img src="img/3.jpg"/><span>津率享红华凝香平衡液&nbsp;150ml</span><p>&yen;120</p></div>
+		<div id="foot"><img src="img/4.jpg"/><span>津率享红华凝香平衡液&nbsp;150ml</span><p>&yen;120</p></div>	
 		<div class="toTop">
-			<a href="#top"><img src="image/Top.png"></a>
+			<a href="#top"><img src="img/Top.png"></a>
 		</div>
-		
 		<footer>
 			<nav>
 				<a href="#shouye"><span class="iconfont icon-shouye"></span><br />首页</a>
-
 				<a href="#jifen"><span class="iconfont icon-jifen"></span><br />积分</a>
-
 				<a href="#fenlei"><span class="iconfont icon-fenlei"></span><br />分类</a>
 				<a href="#jinlingyingcaiwangtubiao07"><span class="iconfont icon-jinlingyingcaiwangtubiao07"></span><br />购物车</a>
 				<a href="#gerenzhongxin"><span class="iconfont icon-gerenzhongxin"></span><br />个人中心</a>
