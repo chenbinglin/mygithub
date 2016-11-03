@@ -5,16 +5,16 @@
 		<meta name="viewport" content="width=device-width,initial-scale=1" />
 		<title>详情页</title>
 		<link rel="stylesheet" type="text/css" href="../css/detail.mins.css"/>
-		<link rel="stylesheet" type="text/css" href="../node_modules/swiper/dist/css/swiper.min.css"/>
-		<link rel="stylesheet" type="text/css" href="../font/ux_1478008698_420203/iconfont.css"/>
-		<link rel="stylesheet" type="text/css" href="../font/shopping_car/iconfont.css"/> 
+		<link rel="stylesheet" type="text/css" href="../css/swiper.min.css"/>
+		<link rel="stylesheet" type="text/css" href="../font/iconfont.css"/>
+	
 	</head>
 	<body>
 		<header>
-			 <span><a class="iconfont icon-back" id="icon1"></a></span>
+			 <span><a class="iconfont icon-llmainpageback" id="icon1"></a></span>
 			 <span id="btn_det">详情</span>
 			 <span id="btn_com">评论</span>
-			 <span><a class="iconfont icon-list" id="icon2"></a></span>
+			 <span><a class="iconfont icon-icon" id="icon2"></a></span>
 		</header>
 		
 	     <!--轮播图-->	
@@ -70,14 +70,15 @@
 	     	</section>-->
 	     	
 	     <footer>
-		     	  <span><a class="iconfont icon-shopping_car" id="icon_car"></a></span>
+		     	  <span><a class="iconfont icon-jinlingyingcaiwangtubiao07" id="icon_car"></a></span>
 		     	  <span>加入购物车</span>
 		     	  <span>立即购买</span>
 	     </footer>
 	     		     	
 	    <script src="../js/jquery-1.12.0.js"></script>	    
-	    <script src="../node_modules/swiper/dist/js/swiper.min.js"></script> 
-	    
+	    <script src="../js/swiper.min.js"></script> 
+	    <script src="../js/zepto.js"></script>
+	    <script src="../js/touch.js"></script>
 	      <script>
 	              
 	     
@@ -212,15 +213,15 @@
                       		
                        		   //页面加载完，绑定点击事件
                        		   
-                       		    $btn_det.on('click',function(){
-//                    		   	       console.log("aaa");
+                       		    $btn_det.on('tap',function(){
+                      		   	       console.log("aaa");
                       		   	       $section.css({display:"block"});
 //                    		   	       $section_com.css({display:"none"});
                       		   	       $btn_det.css({background:"white",color:"black"});
 //                    		   	       $btn_com.css({background:"#8e488e",color:"white"});
                       		   })
-                       		     $btn_com.on('click',function(){
-//                    		   	     console.log("bbb");
+                       		     $btn_com.on('tap',function(){
+                      		   	     console.log("bbb");
                       		   	      $section.css({display:"none"});
 //                    		   	      $section_com.css({display:"block"});
 //                    		   	      $btn_com.css({background:"white",color:"black"});
@@ -265,15 +266,15 @@
                        		 	   
                        		 	   
                        		 	    /*点击事件*/
-                           $btn_det.on('click',function(){
-//                    		   	       console.log("ccc");
+                           $btn_det.on('tap',function(){
+                      		   	       console.log("ccc");
 //                    		   	       $section.css({display:"block"});
                       		   	       $section_com.css({display:"none"});
 //                    		   	       $btn_det.css({background:"white",color:"black"});
                       		   	       $btn_com.css({background:"#8e488e",color:"white"});
                       		   })
-                       		     $btn_com.on('click',function(){
-//                    		   	     console.log("ddd");
+                       		     $btn_com.on('tap',function(){
+                      		   	     console.log("ddd");
 //                    		   	     console.log($section_com);
 //                    		   	      $section.css({display:"none"});
                       		   	      $section_com.css({display:"block"});
