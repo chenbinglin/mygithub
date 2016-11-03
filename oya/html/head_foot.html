@@ -5,122 +5,13 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width,user-scalable=no" />
 		<title>gongyong</title>
-
 		<link rel="stylesheet" type="text/css" href="../font/iconfont.css" />
-		<link rel="stylesheet" type="text/css" href="../css/style.css"/>
+
+		<link rel="stylesheet" type="text/css" href="../css/commenheader.css" />
 		<script src="../js/jquery-1.12.0.js"></script>
-		<style type="text/css">
-			* {
-				list-style: none;
-				margin: 0;
-				padding: 0;
-			}
-			
-			body {
-				font-family: "微软雅黑";
-				background: rgb(238, 243, 250);
-			}
-			
-			header {
-				top: 0;
-				left: 0;
-				right: 0;
-				padding: 10px;
-				background: rgb(142, 72, 142);
-				position: fixed;
-				z-index: 2;
-			}
-			
-			header a {
-				text-decoration: none;
-				color: white;
-				font-size: 18px;
-				display: flex;
-				flex: 1;
-				justify-content: center;
-				align-items: center;
-			}
-			
-			header a:nth-child(2) span {
-				display: flex;
-				flex: 1;
-				justify-content: flex-start;
-				align-content: flex-start;
-				margin-top: -25px;
-			}
-			
-			header a:nth-child(3) span {
-				display: flex;
-				flex: 1;
-				justify-content: flex-end;
-				align-content: flex-end;
-				margin-top: -20px;
-			}
-			
-			footer {
-				left: 0;
-				bottom: 0;
-				right: 0;
-				position: fixed;
-				padding: 7px;
-				background: #998;
-				border-top: solid 1px #666;
-			}
-			
-			footer nav {
-				display: flex;
-				justify-content: center;
-				align-items: center;
-			}
-			
-			footer nav a {
-				color: white;
-				flex: 1;
-				text-align: center;
-				text-decoration: none;
-			}
-			
-			footer nav a:hover {
-				color: rgb(142, 72, 142);
-			}
-			
-			.headmenu {
-				position: absolute;
-				z-index: 3;
-				background: grey;
-				right: 1rem;
-				top: 2.8rem;
-				border-radius:0.4rem ;
-			    display: none;
-			}
-			
-			.headmenu:before {
-				content: "";
-				border: 10px solid transparent;
-				border-bottom: 10px solid gray;
-				position: absolute;
-				right: 0.2rem;
-				top: -1.2rem;
-			}
-			
-			.headmenu ul li {
-				text-align: center;
-				margin: 0 10px;
-				border-bottom: 1px solid gainsboro;
-				color: whitesmoke;
-				line-height: 30px;
-			}
-		</style>
-		<script type="text/javascript">
-			$(function(){
-				var mBtn=$(".icon-icon");
-				var header=$(".headmenu");
-				var i = 0 ;
-				 mBtn.on("click",function(){
-				 	header.toggle();
-				 })
-			})
-		</script>
+		<script type="text/javascript" src="../js/commenheader.js"></script>
+		
+
 	</head>
 
 	<body>
@@ -132,11 +23,21 @@
 		</header>
 		<div class="headmenu">
 			<ul>
-				<a href="#"><li>首页</li></a>
-				<a href="#"><li>积分</li></a>
-				<a href="#"><li>分类</li></a>
-				<a href="gouwuche.html"><li>购物车</li></a>
-				<a href="mycenter.html"><li>个人中心</li></a>
+				<a href="#">
+					<li>首页</li>
+				</a>
+				<a href="#">
+					<li>积分</li>
+				</a>
+				<a href="#">
+					<li>分类</li>
+				</a>
+				<a href="gouwuche.html">
+					<li>购物车</li>
+				</a>
+				<a href="mycenter.html">
+					<li>个人中心</li>
+				</a>
 			</ul>
 		</div>
 		<footer>
@@ -149,7 +50,7 @@
 				<a href="#jinlingyingcaiwangtubiao07"><span class="iconfont icon-jinlingyingcaiwangtubiao07"></span><br />购物车</a>
 				<a href="#gerenzhongxin"><span class="iconfont icon-gerenzhongxin"></span><br />个人中心</a>
 			</nav>
-		</footer>
+        </footer>
 	</body>
 
 </html>
