@@ -17,16 +17,13 @@
   -webkit-text-stroke-width: 0.2px;
   -moz-osx-font-smoothing: grayscale;
 }
-
 .icon-jiahao:before { content: "\3464"; }
 
 .icon-fenlei:before { content: "\e60a"; }
 
 .icon-danxuananniuweixuanzhong:before { content: "\e656"; }
 
-
 .icon-xuanze:before { content: "\e64c"; }
-
 
 .icon-qianwang:before { content: "\e642"; }
 
