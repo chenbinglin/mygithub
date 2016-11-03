@@ -1,3 +1,4 @@
+
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Administrator\/Desktop\/oya\/sass\/gouwuche\.scss}line{font-family:\000031}}
 header {
   box-sizing: border-box;
@@ -8,6 +9,7 @@ header {
   background: #8E488E;
   display: flex;
   z-index: 1; }
+  
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Administrator\/Desktop\/oya\/sass\/gouwuche\.scss}line{font-family:\0000310}}
   header div {
     font-size: 16px;
@@ -15,7 +17,9 @@ header {
     line-height: 48px;
     text-align: center;
     flex: 8; }
+
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Administrator\/Desktop\/oya\/sass\/gouwuche\.scss}line{font-family:\0000317}}
+
   header a {
     height: 100%;
     width: 5.625%;
@@ -29,11 +33,14 @@ header {
     text-align: left; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Administrator\/Desktop\/oya\/sass\/gouwuche\.scss}line{font-family:\0000331}}
+
 section {
   position: relative;
   top: 48px;
   width: 100%; }
+
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Administrator\/Desktop\/oya\/sass\/gouwuche\.scss}line{font-family:\0000335}}
+
   section .shoppingList {
     float: left;
     width: 100%;
@@ -41,6 +48,7 @@ section {
     padding: 10px 0;
     border-bottom: 1px solid #ccc;
     position: relative; }
+
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Administrator\/Desktop\/oya\/sass\/gouwuche\.scss}line{font-family:\0000342}}
     section .shoppingList .select {
       height: 90px;
@@ -48,20 +56,26 @@ section {
       float: left;
       line-height: 90px;
       text-align: center; }
+
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Administrator\/Desktop\/oya\/sass\/gouwuche\.scss}line{font-family:\0000349}}
+
     section .shoppingList img {
       display: block;
       height: 85px;
       width: 25%;
       margin-right: 2.5%;
       float: left; }
+
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Administrator\/Desktop\/oya\/sass\/gouwuche\.scss}line{font-family:\0000356}}
+
     section .shoppingList .goodsName {
       width: 60%;
       height: 20px;
       font-size: 14px;
       float: right; }
+
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Administrator\/Desktop\/oya\/sass\/gouwuche\.scss}line{font-family:\0000362}}
+
     section .shoppingList .number {
       font-size: 14px;
       height: 28px;
@@ -69,13 +83,17 @@ section {
       position: absolute;
       right: 0;
       bottom: 10px; }
+
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Administrator\/Desktop\/oya\/sass\/gouwuche\.scss}line{font-family:\0000369}}
+
       section .shoppingList .number .price {
         color: #e80080;
         line-height: 28px;
         width: 16%;
         float: left; }
+
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Administrator\/Desktop\/oya\/sass\/gouwuche\.scss}line{font-family:\0000375}}
+
       section .shoppingList .number .btn {
         width: 41.6%;
         height: 25px;
@@ -92,7 +110,10 @@ section {
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Administrator\/Desktop\/oya\/sass\/gouwuche\.scss}line{font-family:\0000388}}
         section .shoppingList .number .btn .subtract {
           opacity: 0.5; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Administrator\/Desktop\/oya\/sass\/gouwuche\.scss}line{font-family:\0000389}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tuisong\/oya\/sass\/gouwuche\.scss}line{font-family:\0000388}}
+        section .shoppingList .number .btn .subtract {
+          opacity: 0.5; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tuisong\/oya\/sass\/gouwuche\.scss}line{font-family:\0000389}}
         section .shoppingList .number .btn .center {
           border-left: 1px solid #333;
           border-right: 1px solid #333;
@@ -121,7 +142,10 @@ footer {
   footer label {
     flex: 2;
     height: 46px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Administrator\/Desktop\/oya\/sass\/gouwuche\.scss}line{font-family:\00003124}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tuisong\/oya\/sass\/gouwuche\.scss}line{font-family:\00003120}}
+  footer label {
+    flex: 2;
+    height: 46px; }
   footer a:nth-child(2) {
     flex: 3;
     color: #FFFFFF;

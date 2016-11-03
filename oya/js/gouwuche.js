@@ -73,6 +73,7 @@
 			$(this).siblings(".subtract").css("opacity",1);
 			sum();
 		});
+
 		sect.on("tap",".subtract",function(){
 			$(this).siblings(".center")[0].innerHTML=parseInt($(this)
 				.siblings(".center")[0].innerHTML)-1;
