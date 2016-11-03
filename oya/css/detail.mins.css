@@ -1,9 +1,50 @@
 @charset "UTF-8";
-* {
+/** {
   margin: 0;
   padding: 0;
   background: white;
   border: none;
+}*/
+html,
+body,
+ul,
+li,
+ol,
+dl,
+dd,
+dt,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+fieldset,
+legend,
+img {
+	margin: 0;
+	padding: 0;
+}
+
+fieldset,
+img {
+	border: none;display: block;
+}
+
+ul,
+ol {
+	list-style: none;
+}
+body {
+	font-family: "微软雅黑";
+	background: rgb(238, 243, 250);
+}
+
+a {
+	color: #666;
+	text-decoration: none;
 }
 
 header {
@@ -14,6 +55,7 @@ header {
   height: 48px;
   background: #8e488e;
   display: flex;
+  z-index: 4;
 }
 
 header span {
@@ -61,7 +103,44 @@ header span:nth-child(3) {
 
 header span:nth-child(4) {
   flex: 2.6;
+  
 }
+head{
+	display: block;
+	 width: 100%;
+	 height: 50px;
+	 
+}
+
+/*点击菜单文字图标会出现菜单列表*/
+
+.headmenu {
+	position: absolute;
+	z-index: 5;
+	background: grey;
+	right: 1rem;
+	top: 2.8rem;
+	border-radius: 0.4rem;
+	display: none;
+}
+
+.headmenu:before {
+	content: "";
+	border: 10px solid transparent;
+	border-bottom: 10px solid gray;
+	position: absolute;
+	right: 0.2rem;
+	top: -1.2rem;
+}
+
+.headmenu ul li {
+	text-align: center;
+	margin: 0 10px;
+	border-bottom: 1px solid gainsboro;
+	color: whitesmoke;
+	line-height: 30px;
+}
+
 
 footer {
   width: 100%;
@@ -72,6 +151,9 @@ footer {
   bottom: 0;
   border-top: 1px solid #8E488E;
   background: white;
+  z-index: 4;
+  
+  
 }
 
 footer .btn_tb{
@@ -99,15 +181,21 @@ footer .btn_buy {
   display: flex;
   flex: 2.3;
   height: 50px;
-  color: white;
   background: #8e488e;
   justify-content: center;
   align-items: center;
 }
+footer .btn_buy a{
+	  color: white;
+}
 
 .swiper-container {
+<<<<<<< HEAD
 	margin-top: 50px;
 
+=======
+	/*margin-top: 50px;*/
+>>>>>>> 4c02715707aaf630dda69a5d48cf61248b2744d6
   width: 100%;
 }
 
