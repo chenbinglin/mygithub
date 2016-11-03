@@ -317,13 +317,23 @@
 				goodsList=goodsList?JSON.parse(goodsList):[];
 				console.log(goodsList);
 				btn.on("tap",function(){
+<<<<<<< HEAD
+					
+				   /*点击事件，添加到购物车innnerHTML是js的方法,需要加[0],将jq的dom节点转化为为js的dom节点*/
+				   index=number_det[0].innerHTML=parseInt(number_det[0].innerHTML)+1;
+                    
+                     
+					var obj={};													
+=======
 //					console.log("sss");
 					var obj={};
+>>>>>>> dac59a8f113983372866020c3c9fb87ce5728ea7
 					obj.pic="../img/57.jpg";
 					obj.name="斯文印花黑灰色短袖连衣裙";
 					obj.price="120";
 					obj.num="1";
 					obj.inter="你呀";
+					obj.id="G001";
 					goodsList.unshift(obj);
 					
 					localStorage.setItem("goodsList",JSON.stringify(goodsList));
