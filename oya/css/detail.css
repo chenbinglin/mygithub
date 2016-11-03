@@ -1,0 +1,197 @@
+@charset "UTF-8";
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tuisong\/oya\/sass\/detail\.scss}line{font-family:\000032}}
+* {
+  margin: 0;
+  padding: 0;
+  background: white; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tuisong\/oya\/sass\/detail\.scss}line{font-family:\000039}}
+header {
+  height: 48px;
+  background: #8e488e;
+  display: flex; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tuisong\/oya\/sass\/detail\.scss}line{font-family:\0000313}}
+  header span {
+    background: #8e488e;
+    position: relative; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tuisong\/oya\/sass\/detail\.scss}line{font-family:\0000316}}
+    header span #icon1 {
+      font-size: 34px;
+      background: #8e488e;
+      color: white;
+      position: absolute;
+      left: 10px;
+      top: 5px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tuisong\/oya\/sass\/detail\.scss}line{font-family:\0000326}}
+    header span #icon2 {
+      font-size: 34px;
+      background: #8e488e;
+      color: white;
+      position: absolute;
+      right: 20px;
+      top: 5px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tuisong\/oya\/sass\/detail\.scss}line{font-family:\0000336}}
+    header span:nth-child(1) {
+      flex: 2.6; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tuisong\/oya\/sass\/detail\.scss}line{font-family:\0000340}}
+    header span:nth-child(2) {
+      display: flex;
+      flex: 1.1;
+      justify-content: center;
+      align-items: center;
+      color: white; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tuisong\/oya\/sass\/detail\.scss}line{font-family:\0000348}}
+    header span:nth-child(3) {
+      display: flex;
+      flex: 1.1;
+      color: white;
+      justify-content: center;
+      align-items: center; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tuisong\/oya\/sass\/detail\.scss}line{font-family:\0000356}}
+    header span:nth-child(4) {
+      flex: 2.6; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tuisong\/oya\/sass\/detail\.scss}line{font-family:\0000364}}
+footer {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  border-top: 1px solid #8E488E; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tuisong\/oya\/sass\/detail\.scss}line{font-family:\0000373}}
+  footer span:nth-child(1) {
+    flex: 1.5;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tuisong\/oya\/sass\/detail\.scss}line{font-family:\0000382}}
+  footer span:nth-child(2) {
+    display: flex;
+    flex: 2;
+    height: 50px;
+    color: white;
+    background: #dd3d97;
+    justify-content: center;
+    align-items: center; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tuisong\/oya\/sass\/detail\.scss}line{font-family:\0000391}}
+  footer span:nth-child(3) {
+    display: flex;
+    flex: 2.3;
+    height: 50px;
+    color: white;
+    background: #8e488e;
+    justify-content: center;
+    align-items: center; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tuisong\/oya\/sass\/detail\.scss}line{font-family:\00003106}}
+.swiper-container {
+  width: 100%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tuisong\/oya\/sass\/detail\.scss}line{font-family:\00003112}}
+.swiper-slide img {
+  width: 100%;
+  height: 300px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tuisong\/oya\/sass\/detail\.scss}line{font-family:\00003119}}
+.section_det {
+  display: block;
+  border: 1px solid green; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tuisong\/oya\/sass\/detail\.scss}line{font-family:\00003122}}
+  .section_det h3 {
+    height: 30px;
+    line-height: 30px;
+    font-size: 24px;
+    color: black;
+    padding-left: 10px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tuisong\/oya\/sass\/detail\.scss}line{font-family:\00003129}}
+  .section_det .price {
+    color: red !important;
+    font-size: 16px;
+    line-height: 50px;
+    height: 50px;
+    padding-left: 10px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tuisong\/oya\/sass\/detail\.scss}line{font-family:\00003136}}
+  .section_det p {
+    height: 32px;
+    line-height: 18px;
+    padding-left: 10px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tuisong\/oya\/sass\/detail\.scss}line{font-family:\00003141}}
+    .section_det p span {
+      font-size: 12px;
+      color: black; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tuisong\/oya\/sass\/detail\.scss}line{font-family:\00003145}}
+    .section_det p a {
+      font-size: 12px;
+      color: #999; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tuisong\/oya\/sass\/detail\.scss}line{font-family:\00003150}}
+  .section_det .last {
+    margin-top: 10px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tuisong\/oya\/sass\/detail\.scss}line{font-family:\00003153}}
+  .section_det div {
+    width: 100%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tuisong\/oya\/sass\/detail\.scss}line{font-family:\00003155}}
+    .section_det div img {
+      width: 100%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tuisong\/oya\/sass\/detail\.scss}line{font-family:\00003165}}
+.section_com {
+  display: none; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tuisong\/oya\/sass\/detail\.scss}line{font-family:\00003169}}
+  .section_com p:nth-child(1) {
+    /*第一个p标签*/
+    position: relative;
+    border-bottom: 1px solid #eee;
+    height: 40px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tuisong\/oya\/sass\/detail\.scss}line{font-family:\00003174}}
+    .section_com p:nth-child(1) span:nth-child(1) {
+      /*第一个span标签*/
+      position: absolute;
+      top: 6px;
+      left: 10px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tuisong\/oya\/sass\/detail\.scss}line{font-family:\00003178}}
+      .section_com p:nth-child(1) span:nth-child(1) img {
+        width: 26px;
+        height: 26px;
+        border-radius: 50%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tuisong\/oya\/sass\/detail\.scss}line{font-family:\00003185}}
+    .section_com p:nth-child(1) span:nth-child(2) {
+      /*第二个span标签*/
+      position: absolute;
+      left: 50px;
+      top: 10px;
+      font-size: 14px;
+      color: black; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tuisong\/oya\/sass\/detail\.scss}line{font-family:\00003192}}
+    .section_com p:nth-child(1) span:nth-child(3) {
+      /*第三个span标签*/
+      position: absolute;
+      right: 10px;
+      top: 16px;
+      font-size: 10px;
+      color: #999; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tuisong\/oya\/sass\/detail\.scss}line{font-family:\00003203}}
+  .section_com p:nth-child(2) {
+    height: 22px;
+    padding-left: 7px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tuisong\/oya\/sass\/detail\.scss}line{font-family:\00003208}}
+  .section_com p:nth-child(3) {
+    height: 24px;
+    line-height: 24px;
+    font-size: 12px;
+    color: black;
+    padding-left: 7px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tuisong\/oya\/sass\/detail\.scss}line{font-family:\00003215}}
+  .section_com p:nth-child(4) {
+    height: 22px;
+    line-height: 22px;
+    font-size: 12px;
+    color: #afafaf;
+    padding-left: 7px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tuisong\/oya\/sass\/detail\.scss}line{font-family:\00003222}}
+  .section_com p:nth-child(5) {
+    height: 10px;
+    background: #f1f5f6; }
