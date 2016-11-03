@@ -10,7 +10,7 @@
 	
 	</head>
 	<body>
-		<header>
+		<header class="head_det">
 			 <span><a class="iconfont icon-llmainpageback" id="icon1"></a></span>
 			 <span id="btn_det">详情</span>
 			 <span id="btn_com">评论</span>
@@ -70,9 +70,9 @@
 	     	</section>-->
 	     	
 	     <footer>
-		     	  <span><a class="iconfont icon-jinlingyingcaiwangtubiao07" id="icon_car"></a></span>
-		     	  <span>加入购物车</span>
-		     	  <span>立即购买</span>
+		     	  <span class="btn_tb"><a class="iconfont icon-jinlingyingcaiwangtubiao07" id="icon_car"></a></span>
+		     	   <button class="btn_sc">加入购物车</button>
+		     	   <button class="btn_buy">立即购买</button>
 	     </footer>
 	     		     	
 	    <script src="../js/jquery-1.12.0.js"></script>	    
@@ -100,12 +100,10 @@
                       	type:"get",
                       	url:"../data/detail_det.json",  
                       	async:true,
-                      	success:function(res){  //从浏览器上获取数据
-                      		
+                      	success:function(res){  //从浏览器上获取数据                  		
                       		 $.each(res,function(idx,item){  //从服务器获取
 //                    		 	   console.log(res); 
-                        		 	   
-                       		 	   
+                        		 	                          		 	   
                       		 	   /*div盒子*/
                       		 	   var $div=$('<div/>').addClass('swiper-container');
                       		 	   $div.appendTo($section);
@@ -263,7 +261,7 @@
                        		 	   $('<p/>').html(item.user_com).appendTo($section_com);
                        		 	   $('<p/>').html(item.buy_time).appendTo($section_com);
                        		 	   $('<p/>').appendTo($section_com);
-                       		 	   
+      
                        		 	   
                        		 	    /*点击事件*/
                            $btn_det.on('tap',function(){
@@ -302,7 +300,56 @@
              }) 
 		 	</script>
 		 	
+		 	<script type="text/javascript">
+			document.addEventListener("DOMContentLoaded",function(){
+				var btn=$(".btn_sc");
+				var btn2=$(".btn_buy");
+				var goodsList=localStorage.getItem("goodsList");
+				goodsList=goodsList?JSON.parse(goodsList):[];
+				console.log(goodsList);
+				btn.on("tap",function(){
+//					console.log("sss");
+					var obj={};
+					obj.pic="../img/57.jpg";
+					obj.name="斯文印花黑灰色短袖连衣裙";
+					obj.price="120";
+					obj.num="1";
+					obj.inter="你呀";
+					goodsList.unshift(obj);
+					
+					localStorage.setItem("goodsList",JSON.stringify(goodsList));
+				});
+				btn2.on("tap",function(){
+					  
+				})
+				
+			})
+		</script>
+		 	
 		 	
 
 	</body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
