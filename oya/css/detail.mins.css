@@ -71,7 +71,6 @@ footer {
   left: 0;
   bottom: 0;
   border-top: 1px solid #8E488E;
-<<<<<<< HEAD
   background: white;
 }
 
@@ -83,8 +82,6 @@ footer .btn_tb{
   align-items: center;
   font-size: 32px;
 }
-
-
 footer .btn_sc{
   display: flex;
   flex: 2;
@@ -94,6 +91,7 @@ footer .btn_sc{
   justify-content: center;
   align-items: center;
 }
+
 
 
 footer .btn_buy {
@@ -120,7 +118,6 @@ footer .btn_buy {
 
 .section_det {
   display: block;
-<<<<<<< HEAD
   /*border: 1px solid green;*/
 }
 

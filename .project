@@ -15,6 +15,10 @@
 		<nature>com.aptana.projects.webnature</nature>
 	</natures>
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> lkh
 	<filteredResources>
 		<filter>
 			<id>1478141058825</id>
@@ -26,6 +30,10 @@
 			</matcher>
 		</filter>
 	</filteredResources>
+<<<<<<< HEAD
 =======
+>>>>>>> lkh
+=======
+>>>>>>> ac1dc0d02f7fb552d3dfa7f57a02168a46bdddf5
 >>>>>>> lkh
 </projectDescription>
