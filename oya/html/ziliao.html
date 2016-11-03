@@ -1,10 +1,115 @@
 <!doctype html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8" />
-	<title>Document</title>
-</head>
-<body>
-	
-</body>
+
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width,user-scalable=no" />
+		<title>gongyong</title>
+		<link rel="stylesheet" type="text/css" href="../font/iconfont.css" />
+
+		<link rel="stylesheet" type="text/css" href="../css/commenheader.css" />
+		<link rel="stylesheet" type="text/css" href="../css/ziliao.css" />
+		<script src="../js/jquery-1.12.0.js"></script>
+		<script type="text/javascript" src="../js/commenheader.js"></script>
+
+	</head>
+
+	<body>
+		<header>
+			<a>完善我的资料</a>
+			<a href="../index.html"><span class="iconfont icon-llmainpageback"></span></a>
+			<a href="#icon"><span class="iconfont icon-icon"></span></a>
+		</header>
+		<div class="headmenu">
+			<ul>
+				<a href="../index.html">
+					<li>首页</li>
+				</a>
+				<a href="myvault.html">
+					<li>积分</li>
+				</a>
+				<a href="liebiao.html">
+					<li>分类</li>
+				</a>
+				<a href="gouwuche.html">
+					<li>购物车</li>
+				</a>
+				<a href="mycenter.html">
+					<li>个人中心</li>
+				</a>
+			</ul>
+		</div>
+
+		<div id="kongbai"></div>
+		<main>
+			<form action="http://www.baidu.com" method="post">
+
+				<p>
+					<label for="username">昵称</label>
+					<input type="text" id="username" name="username" autofocus required placeholder="请输入用户昵称">
+				</p>
+
+				<p>
+					<label for="mobile">手机号码</label>
+					<input type="telephone" id="mobile" name="mobile" autofocus required pattern="1[3578]\d{9}" placeholder="请输入正确格式的手机号">
+				</p>
+
+				<p>
+					<label for=""></label>
+					<select id="" name="" required>
+						<option value="选择省">选择省</option>
+						<option value="广东">广东</option>
+						<option value="福建">福建</option>
+						<option value="贵州">贵州</option>
+						<option value="四川">四川</option>
+						<option value="云南">云南</option>
+						<option value="广西">广西</option>
+					</select>
+				</p>
+				<p>
+					<label for="city">收货地址</label>
+					<select id="city" name="city">
+						<option value="选择市">选择市</option>
+						<option value="广州">广州</option>
+						<option value="福州">福州</option>
+						<option value="贵阳">贵阳</option>
+						<option value="成都">成都</option>
+						<option value="曲靖">曲靖</option>
+						<option value="柳州">柳州</option>
+
+					</select>
+				</p>
+				<p>
+					<label for=""></label>
+					<select id="" name="">
+						<option value="选择县/区">选择县/区</option>
+						<option value="天河区">天河区</option>
+						<option value="鼓楼区">鼓楼区</option>
+						<option value="南明区">南明区</option>
+						<option value="锦江区">锦江区</option>
+						<option value="五华区">五华区</option>
+						<option value="兴宁区">兴宁区</option>
+					</select>
+
+				</p>
+				<p>
+					<label for="username"></label>
+					<input type="text" name="username" id="username" value="" placeholder="详细地址" required="required" autofocus="autofocus" />
+
+				</p>
+
+				<button>提交</button>
+			</form>
+		</main>
+		<footer>
+			<nav>
+				<a href="../index.html"><span class="iconfont icon-shouye"></span><br />首页</a>
+				<a href="myvault.html"><span class="iconfont icon-jifen"></span><br />积分</a>
+				<a href="liebiao.html"><span class="iconfont icon-fenlei"></span><br />分类</a>
+				<a href="gouwuche.html"><span class="iconfont icon-jinlingyingcaiwangtubiao07"></span><br />购物车</a>
+				<a href="mycenter.html"><span class="iconfont icon-gerenzhongxin"></span><br />个人中心</a>
+			</nav>
+		</footer>
+	</body>
+
 </html>
