@@ -164,6 +164,7 @@ footer .btn_tb{
   align-items: center;
   font-size: 32px;
 }
+
 footer .btn_sc{
   display: flex;
   flex: 2;
@@ -174,10 +175,39 @@ footer .btn_sc{
   align-items: center;
 }
 
+footer .btn_tb .box{
+	 position: relative;
+	 width: 100%;
+	 height: 100%;
+	 /*background: yellow;*/
+}
 
+footer .btn_tb .box #icon_car{
+	 display: block;
+	 position: absolute;
+	 width: 24px;
+	 height: 24px;
+	  font-size: 24px;
+	  left: 32px;
+	  top: 18px;
+	  /*border: 1px solid green;*/
+}
 
+footer .btn_tb .box #XTU{
+	 display: block;
+	 position: absolute;
+	 width: 14px;
+	 height: 14px;
+	 border-radius: 50%;
+	 right: 22px;
+	 top: 10px;
+	 border: 1px solid #999;
+	 text-align: center;
+	 font-size: 12px;
+	 color: white;
+	 background: #8e488e;
+}
 footer .btn_buy {
-
   display: flex;
   flex: 2.3;
   height: 50px;
@@ -190,12 +220,7 @@ footer .btn_buy a{
 }
 
 .swiper-container {
-<<<<<<< HEAD
-	margin-top: 50px;
-
-=======
 	/*margin-top: 50px;*/
->>>>>>> 4c02715707aaf630dda69a5d48cf61248b2744d6
   width: 100%;
 }
 
@@ -244,7 +269,6 @@ footer .btn_buy a{
 .section_det .last {
   margin-top: 10px;
   margin-bottom: 13px;
-
 }
 
 .section_det div {
