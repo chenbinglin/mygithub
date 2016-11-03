@@ -117,7 +117,7 @@ footer nav a:hover {
 /*点击菜单文字图标会出现菜单列表*/
 
 .headmenu {
-	position: absolute;
+	position:fixed;
 	z-index: 3;
 	background: grey;
 	right: 1rem;
