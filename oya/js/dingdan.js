@@ -1,5 +1,4 @@
-;
-$(function() {
+;$(function() {
 	$("#btn #del").click(function() {
 		//console.log('删除')
 		$(this).closest("section").slideUp();

@@ -10,7 +10,9 @@
 	
 	</head>
 	<body>
+
 		<header class="head_det">
+
 			 <span><a class="iconfont icon-llmainpageback" id="icon1"></a></span>
 			 <span id="btn_det">详情</span>
 			 <span id="btn_com">评论</span>
@@ -70,9 +72,12 @@
 	     	</section>-->
 	     	
 	     <footer>
+
 		     	  <span class="btn_tb"><a class="iconfont icon-jinlingyingcaiwangtubiao07" id="icon_car"></a></span>
 		     	   <button class="btn_sc">加入购物车</button>
 		     	   <button class="btn_buy">立即购买</button>
+
+
 	     </footer>
 	     		     	
 	    <script src="../js/jquery-1.12.0.js"></script>	    
@@ -104,6 +109,7 @@
                       		 $.each(res,function(idx,item){  //从服务器获取
 //                    		 	   console.log(res); 
                         		 	                          		 	   
+
                       		 	   /*div盒子*/
                       		 	   var $div=$('<div/>').addClass('swiper-container');
                       		 	   $div.appendTo($section);
@@ -261,7 +267,6 @@
                        		 	   $('<p/>').html(item.user_com).appendTo($section_com);
                        		 	   $('<p/>').html(item.buy_time).appendTo($section_com);
                        		 	   $('<p/>').appendTo($section_com);
-      
                        		 	   
                        		 	    /*点击事件*/
                            $btn_det.on('tap',function(){
@@ -299,7 +304,6 @@
                               
              }) 
 		 	</script>
-		 	
 		 	<script type="text/javascript">
 			document.addEventListener("DOMContentLoaded",function(){
 				var btn=$(".btn_sc");
@@ -325,7 +329,7 @@
 				
 			})
 		</script>
-		 	
+
 		 	
 
 	</body>
