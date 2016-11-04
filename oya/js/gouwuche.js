@@ -10,12 +10,14 @@
 		var goodsData=[];
 		var rightBtn=$(".icon-icon");
 		var rightUl=$(".headright");
+		
 		rightBtn.on("tap",function(){
-			rightUl.css("display","block");
+			rightUl.toggle();
 		});
-		rightUl.on("tap",function(){
-			rightUl.css("display","none");
-		});
+//		rightUl.on("tap",function(){
+//			rightUl.css("display","none");
+//		});
+		
 		for(var a=0; a<goodsList.length;a++){
 			for(var b in goodsList[a]){
 				goodsData.push(goodsList[a][b]);	
