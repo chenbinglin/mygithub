@@ -1,4 +1,4 @@
-;$(function(){
+;(function(){
 	  /*json获取数据与加载*/
 		 	      jQuery(document).ready(function(){
 		 	      	
@@ -227,7 +227,7 @@
 				console.log(goodsList);
 				var index=0;
 				btn.on("tap",function(){
-					
+					console.log("jjj");
 				   /*点击事件，添加到购物车innnerHTML是js的方法,需要加[0],将jq的dom节点转化为为js的dom节点*/
 				   index=number_det[0].innerHTML=parseInt(number_det[0].innerHTML)+1;
                     
@@ -254,4 +254,4 @@
 					
 				})
 			
-});
+})();
