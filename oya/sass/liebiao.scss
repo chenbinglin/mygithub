@@ -1,3 +1,30 @@
+.headmenu{
+    position:fixed;
+    z-index: 3;
+    background: grey;
+    right: 14px;
+    top: 46px;
+    border-radius: 4px;
+    display: none;
+    :before {
+        content: "";
+        border: 10px solid transparent;
+        border-bottom: 10px solid gray;
+        position: absolute;
+        right: 8px;
+        top: -20px;
+    }
+    ul a{display:block;overflow: hidden;}
+    ul li {
+        text-align: center;
+        margin: 0 10px;
+        border-bottom: 1px solid gainsboro;
+        color: whitesmoke;
+        line-height: 30px;
+        
+    }
+}
+
 section{
      position: relative;
      top: 48px;

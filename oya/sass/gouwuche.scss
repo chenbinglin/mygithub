@@ -57,6 +57,9 @@ section{
     position: relative;
     top: 48px;
     width: 100%;
+    .shoppingList:last-child{
+                margin-bottom: 48px;
+    }
     .shoppingList{
             float: left;
             width: 100%;
@@ -64,6 +67,7 @@ section{
             padding: 10px 0;
             border-bottom: 1px solid #ccc;
             position: relative;
+            
             .select{
                 height: 90px;
                 width:12.5%;

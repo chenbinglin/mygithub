@@ -15,7 +15,7 @@
 		});
 		rightUl.on("tap",function(){
 			rightUl.css("display","none");
-		})
+		});
 		for(var a=0; a<goodsList.length;a++){
 			for(var b in goodsList[a]){
 				goodsData.push(goodsList[a][b]);	
