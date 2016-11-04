@@ -28,12 +28,44 @@ header {
     font-size: 18px;
     text-align: left; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tuisong\/oya\/sass\/gouwuche\.scss}line{font-family:\0000331}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tuisong\/oya\/sass\/gouwuche\.scss}line{font-family:\0000330}}
+.headright {
+  position: fixed;
+  z-index: 3;
+  background: grey;
+  right: 14px;
+  top: 46px;
+  border-radius: 4px;
+  display: none; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tuisong\/oya\/sass\/gouwuche\.scss}line{font-family:\0000338}}
+  .headright :before {
+    content: "";
+    border: 10px solid transparent;
+    border-bottom: 10px solid gray;
+    position: absolute;
+    right: 8px;
+    top: -20px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tuisong\/oya\/sass\/gouwuche\.scss}line{font-family:\0000346}}
+  .headright ul a {
+    display: block;
+    overflow: hidden; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tuisong\/oya\/sass\/gouwuche\.scss}line{font-family:\0000347}}
+  .headright ul li {
+    text-align: center;
+    margin: 0 10px;
+    border-bottom: 1px solid gainsboro;
+    color: whitesmoke;
+    line-height: 30px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tuisong\/oya\/sass\/gouwuche\.scss}line{font-family:\0000356}}
 section {
   position: relative;
   top: 48px;
   width: 100%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tuisong\/oya\/sass\/gouwuche\.scss}line{font-family:\0000335}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tuisong\/oya\/sass\/gouwuche\.scss}line{font-family:\0000360}}
+  section .shoppingList:last-child {
+    margin-bottom: 48px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tuisong\/oya\/sass\/gouwuche\.scss}line{font-family:\0000363}}
   section .shoppingList {
     float: left;
     width: 100%;
@@ -41,27 +73,27 @@ section {
     padding: 10px 0;
     border-bottom: 1px solid #ccc;
     position: relative; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tuisong\/oya\/sass\/gouwuche\.scss}line{font-family:\0000342}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tuisong\/oya\/sass\/gouwuche\.scss}line{font-family:\0000371}}
     section .shoppingList .select {
       height: 90px;
       width: 12.5%;
       float: left;
       line-height: 90px;
       text-align: center; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tuisong\/oya\/sass\/gouwuche\.scss}line{font-family:\0000349}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tuisong\/oya\/sass\/gouwuche\.scss}line{font-family:\0000378}}
     section .shoppingList img {
       display: block;
       height: 85px;
       width: 25%;
       margin-right: 2.5%;
       float: left; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tuisong\/oya\/sass\/gouwuche\.scss}line{font-family:\0000356}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tuisong\/oya\/sass\/gouwuche\.scss}line{font-family:\0000385}}
     section .shoppingList .goodsName {
       width: 60%;
       height: 20px;
       font-size: 14px;
       float: right; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tuisong\/oya\/sass\/gouwuche\.scss}line{font-family:\0000362}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tuisong\/oya\/sass\/gouwuche\.scss}line{font-family:\0000391}}
     section .shoppingList .number {
       font-size: 14px;
       height: 28px;
@@ -69,13 +101,13 @@ section {
       position: absolute;
       right: 0;
       bottom: 10px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tuisong\/oya\/sass\/gouwuche\.scss}line{font-family:\0000369}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tuisong\/oya\/sass\/gouwuche\.scss}line{font-family:\0000398}}
       section .shoppingList .number .price {
         color: #e80080;
         line-height: 28px;
         width: 16%;
         float: left; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tuisong\/oya\/sass\/gouwuche\.scss}line{font-family:\0000375}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tuisong\/oya\/sass\/gouwuche\.scss}line{font-family:\00003104}}
       section .shoppingList .number .btn {
         width: 41.6%;
         height: 25px;
@@ -84,20 +116,20 @@ section {
         border-radius: 4px;
         position: absolute;
         right: 18.75%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tuisong\/oya\/sass\/gouwuche\.scss}line{font-family:\0000383}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tuisong\/oya\/sass\/gouwuche\.scss}line{font-family:\00003112}}
         section .shoppingList .number .btn span {
           flex: 1;
           text-align: center;
           line-height: 25px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tuisong\/oya\/sass\/gouwuche\.scss}line{font-family:\0000388}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tuisong\/oya\/sass\/gouwuche\.scss}line{font-family:\00003117}}
         section .shoppingList .number .btn .subtract {
           opacity: 0.5; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tuisong\/oya\/sass\/gouwuche\.scss}line{font-family:\0000389}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tuisong\/oya\/sass\/gouwuche\.scss}line{font-family:\00003118}}
         section .shoppingList .number .btn .center {
           border-left: 1px solid #333;
           border-right: 1px solid #333;
           display: block; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tuisong\/oya\/sass\/gouwuche\.scss}line{font-family:\0000396}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tuisong\/oya\/sass\/gouwuche\.scss}line{font-family:\00003125}}
       section .shoppingList .number .del {
         float: right;
         height: 25px;
@@ -105,7 +137,7 @@ section {
         margin-right: 5.2%;
         line-height: 25px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tuisong\/oya\/sass\/gouwuche\.scss}line{font-family:\00003109}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tuisong\/oya\/sass\/gouwuche\.scss}line{font-family:\00003138}}
 footer {
   height: 46px;
   width: 100%;
@@ -115,21 +147,22 @@ footer {
   display: flex;
   text-align: center;
   line-height: 46px;
+  background-color: #FFFFFF;
   border-top: solid 1px #8E488E;
   z-index: 1; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tuisong\/oya\/sass\/gouwuche\.scss}line{font-family:\00003120}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tuisong\/oya\/sass\/gouwuche\.scss}line{font-family:\00003150}}
   footer label {
     flex: 2;
     height: 46px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tuisong\/oya\/sass\/gouwuche\.scss}line{font-family:\00003124}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tuisong\/oya\/sass\/gouwuche\.scss}line{font-family:\00003154}}
   footer a:nth-child(2) {
     flex: 3;
     color: #FFFFFF;
     background: #dd3d97; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tuisong\/oya\/sass\/gouwuche\.scss}line{font-family:\00003128}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tuisong\/oya\/sass\/gouwuche\.scss}line{font-family:\00003158}}
     footer a:nth-child(2) i {
       margin-left: 6px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tuisong\/oya\/sass\/gouwuche\.scss}line{font-family:\00003132}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tuisong\/oya\/sass\/gouwuche\.scss}line{font-family:\00003162}}
   footer a:nth-child(3) {
     flex: 4;
     color: #FFFFFF;

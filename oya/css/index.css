@@ -1,0 +1,81 @@
+*{list-style: none;margin: 0;padding: 0;text-decoration: none;}
+		body{font-family: "微软雅黑";}
+		img{width: 100%;display: block;}
+		.wrap ul li img:hover{opacity:0.8;filter:alpha(opacity=80);}
+		header{
+			top: 0;
+			left: 0;
+			right: 0;
+			padding: 15px;
+			background: rgb(142,72,142);
+			position:fixed;
+			z-index: 2;
+		}
+		header a{
+			text-decoration: none;
+			color: white;
+			font-size: 18px;
+			display: flex;
+			flex: 1;
+			justify-content: center;
+			align-items: center;
+		}
+		header a span{display: flex;flex: 1;justify-content: flex-end;align-content: flex-end;margin-top: -25px;}
+		.swiper-container {
+        width: 100%;
+        height: 100%;
+        margin-top: 45px;
+        z-index: 1;
+  		}
+	    .swiper-wrapper img{width: 100%;}
+	    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    	}	
+    	#jinxuan img{width: 100%;}
+		.wrap ul{width: 100%;display: flex;}
+		.wrap ul li{flex: 1;}
+		.wrap ul li:nth-child(1){margin-right: 5px;}
+		.wrap ul li img{width: 100%; display: flex;justify-content: center;align-content: center;margin-top: 5px;}	
+		
+		.toTop{ position:fixed; bottom:70px; right:5px;cursor:pointer;}
+		
+		#foot span{font-weight: 600;padding:15px;color: rgb(114,124,141);}
+		#foot p{font-weight: 600;padding:12px 0 5px 15px;color: rgb(236,46,161);}
+		#foot a span:hover{text-decoration: underline;color: blue;}
+		footer {
+			left: 0;
+			bottom: 0;
+			right: 0;
+			position: fixed;
+			padding: 7px;
+			background: #998;
+			border-top:solid 1px #666;	
+		}
+		footer nav {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		footer nav a {
+			color: white;
+			flex: 1;
+			text-align: center;
+			text-decoration: none;
+		}
+		footer nav a:nth-child(1){color: rgb(142,72,142);}
+		footer nav a:hover{color: rgb(142,72,142);}

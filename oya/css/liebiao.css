@@ -1,40 +1,33 @@
 @media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tuisong\/oya\/sass\/liebiao\.scss}line{font-family:\000031}}
-html body {
-  padding: 0;
-  margin: 0; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tuisong\/oya\/sass\/liebiao\.scss}line{font-family:\000032}}
-header {
-  overflow: hidden;
-  box-sizing: border-box;
-  width: 100%;
-  padding: 0 3.125%;
-  height: 48px;
+.headmenu {
   position: fixed;
-  background: #8E488E;
-  display: flex;
-  z-index: 1; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tuisong\/oya\/sass\/liebiao\.scss}line{font-family:\0000312}}
-  header div {
-    font-size: 16px;
-    color: #fff;
-    line-height: 48px;
+  z-index: 3;
+  background: grey;
+  right: 14px;
+  top: 46px;
+  border-radius: 4px;
+  display: none; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tuisong\/oya\/sass\/liebiao\.scss}line{font-family:\000039}}
+  .headmenu :before {
+    content: "";
+    border: 10px solid transparent;
+    border-bottom: 10px solid gray;
+    position: absolute;
+    right: 8px;
+    top: -20px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tuisong\/oya\/sass\/liebiao\.scss}line{font-family:\0000317}}
+  .headmenu ul a {
+    display: block;
+    overflow: hidden; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tuisong\/oya\/sass\/liebiao\.scss}line{font-family:\0000318}}
+  .headmenu ul li {
     text-align: center;
-    flex: 8; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tuisong\/oya\/sass\/liebiao\.scss}line{font-family:\0000319}}
-  header a {
-    height: 48px;
-    width: 56.25%;
-    flex: 1;
-    color: #FFFFFF;
-    line-height: 48px;
-    text-align: right; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tuisong\/oya\/sass\/liebiao\.scss}line{font-family:\0000327}}
-  header a:nth-child(1) {
-    font-size: 18px;
-    text-align: left; }
+    margin: 0 10px;
+    border-bottom: 1px solid gainsboro;
+    color: whitesmoke;
+    line-height: 30px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tuisong\/oya\/sass\/liebiao\.scss}line{font-family:\0000333}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tuisong\/oya\/sass\/liebiao\.scss}line{font-family:\0000328}}
 section {
   position: relative;
   top: 48px;
@@ -42,84 +35,56 @@ section {
   background-color: #f1f5f6;
   overflow: hidden;
   margin-bottom: 60px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tuisong\/oya\/sass\/liebiao\.scss}line{font-family:\0000340}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tuisong\/oya\/sass\/liebiao\.scss}line{font-family:\0000335}}
   section h4 {
     height: 34px;
     line-height: 34px;
     background-color: #f1f5f6; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tuisong\/oya\/sass\/liebiao\.scss}line{font-family:\0000345}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tuisong\/oya\/sass\/liebiao\.scss}line{font-family:\0000340}}
   section aside {
     float: left;
     width: 31.25%;
     text-align: center;
     font-size: 14px;
     background-color: #FFFFFF; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tuisong\/oya\/sass\/liebiao\.scss}line{font-family:\0000351}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tuisong\/oya\/sass\/liebiao\.scss}line{font-family:\0000346}}
     section aside h4 {
       color: #fe3d3d;
       height: 40px;
       line-height: 40px;
       background-color: #f1f5f6; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tuisong\/oya\/sass\/liebiao\.scss}line{font-family:\0000358}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tuisong\/oya\/sass\/liebiao\.scss}line{font-family:\0000353}}
     section aside ul li {
       height: 40px;
       line-height: 40px;
       border-bottom: #fe3d3d; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tuisong\/oya\/sass\/liebiao\.scss}line{font-family:\0000362}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tuisong\/oya\/sass\/liebiao\.scss}line{font-family:\0000357}}
       section aside ul li a {
         display: block;
         color: #000; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tuisong\/oya\/sass\/liebiao\.scss}line{font-family:\0000367}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tuisong\/oya\/sass\/liebiao\.scss}line{font-family:\0000362}}
   section .list {
     float: right;
     margin: 0 3.125%;
     width: 62.5%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tuisong\/oya\/sass\/liebiao\.scss}line{font-family:\0000371}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tuisong\/oya\/sass\/liebiao\.scss}line{font-family:\0000366}}
     section .list .content {
       width: 100%;
       height: 300px;
       display: flex;
       flex-wrap: wrap;
       background-color: #FFFFFF; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tuisong\/oya\/sass\/liebiao\.scss}line{font-family:\0000377}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tuisong\/oya\/sass\/liebiao\.scss}line{font-family:\0000372}}
       section .list .content div {
         width: 33.333%;
         height: 75px;
         display: block;
         text-align: center; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tuisong\/oya\/sass\/liebiao\.scss}line{font-family:\0000382}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tuisong\/oya\/sass\/liebiao\.scss}line{font-family:\0000377}}
+        section .list .content div a {
+          color: #000000; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tuisong\/oya\/sass\/liebiao\.scss}line{font-family:\0000378}}
         section .list .content div img {
           width: 100%;
           height: 60px;
           display: block; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tuisong\/oya\/sass\/liebiao\.scss}line{font-family:\0000392}}
-footer {
-  display: flex;
-  overflow: hidden;
-  width: 100%;
-  height: 54px;
-  position: fixed;
-  bottom: 0;
-  border-top: solid 1px #ccc;
-  background-color: #FFFFFF; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tuisong\/oya\/sass\/liebiao\.scss}line{font-family:\00003101}}
-  footer a {
-    flex: 1;
-    font-size: 12px;
-    color: #777;
-    height: 70px;
-    text-align: center;
-    display: flex;
-    flex-wrap: wrap;
-    text-align: center; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tuisong\/oya\/sass\/liebiao\.scss}line{font-family:\00003110}}
-    footer a span {
-      line-height: 24px;
-      width: 100%;
-      text-align: center;
-      padding-top: 6px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tuisong\/oya\/sass\/liebiao\.scss}line{font-family:\00003116}}
-    footer a i {
-      width: 100%;
-      text-align: center; }

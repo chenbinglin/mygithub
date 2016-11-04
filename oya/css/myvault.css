@@ -1,0 +1,84 @@
+
+	/*	金额信息*/
+	/*1)*/
+	
+	.vault-content-1 {
+		margin-top: 45px;
+		background: white;
+	}
+	
+	.vault-content-1 ul {
+		display: flex;
+		padding: 10px;
+	}
+	
+	.vault-content-1 ul li {
+		flex: 1;
+		text-align: center;
+	}
+	
+	.vault-content-1 ul li span {
+		font-family: "微软雅黑";
+		font-weight: 900;
+	}
+	
+	.vault-content-1 ul li p {
+		font-size: 12px;
+		color: darkgrey;
+	}
+	
+	.vault-content-1 ul li:nth-child(1) {
+		border-right: 1px solid gainsboro;
+	}
+	/*金额支出/收入列表*/
+	
+	.vault-content-2 {
+		background: white;
+		margin-top: 10px;
+	}
+	/*列表头部*/
+	
+	.vault-content-2 .nav {
+		display: flex;
+		border-top: 1px solid gainsboro
+	}
+	
+	.vault-content-2 .nav li {
+		flex: 1;
+		text-align: center;
+		border-right: 1px solid gainsboro;
+		height: 6vh;
+		line-height: 6vh;
+	}
+	
+	.vault-content-2 .nav li:nth-child(4) {
+		border: none;
+	}
+	
+	.vault-content-2 .nav li span {
+		font-size: 12px;
+		color: grey;
+	}
+	/*列表内容*/
+	
+	.vault-content-2 .list {
+		border-top: 1px solid gainsboro;
+		b
+	}
+	
+	.vault-content-2 .list li {
+		display: flex;
+		border-bottom: 1px solid gainsboro;
+		padding: 10px 0;
+	}
+	
+	.vault-content-2 .list li p {
+		font-size: 12px;
+		text-align: center;
+		color: darkgray;
+		flex: 1;
+	}
+	/***************尾部*********************/
+	footer nav a:nth-child(2){
+	color: rgb(142,72,142);
+}
